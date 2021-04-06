@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        .main-background {
+            width: 100%;
+            background-color: rgba(0, 0, 0, .9);
+        }
+        
+        .wrap {
+            width: 1000px;
+            height: 100vh;
+            margin: auto;
+            display: flex;
+        }
+        
+        .item {
+            width: 300px;
+            background-color: #fff;
+            margin: auto;
+            transition: .5s;
+        }
+        
+        .item img {
+            width: 100%;
+            vertical-align: middle;
+        }
+        
+        .item .txt {
+            text-align: center;
+            padding: 10px 20px 20px 20px;
+            position: relative;
+            transition: .3s;
+        }
+        
+        .item .txt:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-left: 150px solid #fff;
+            border-right: 150px solid #fff;
+            border-top: 30px solid transparent;
+            transform: translateY(-29.6px);
+        }
+        
+        .item h2 {
+            border-bottom: 1px solid #aaa;
+            padding-bottom: .5em;
+            margin-bottom: .5em;
+        }
+        
+        .item:hover {
+            transform: translateY(-10%);
+        }
+        
+        .txt:hover {
+            color: lightslategrey;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="main-background">
+        <div class="wrap">
+            <div class="item">
+                <img src="https://picsum.photos/300/300/?random=1">
+                <div class="txt">
+                    <h2>01</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quod minima aut molestiae corporis ipsa illum soluta voluptate corrupti, nisi, nobis rem accusamus nemo deleniti fugiat perspiciatis fuga et consequatur.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://picsum.photos/300/300/?random=2">
+                <div class="txt">
+                    <h2>02</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quod minima aut molestiae corporis ipsa illum soluta voluptate corrupti, nisi, nobis rem accusamus nemo deleniti fugiat perspiciatis fuga et consequatur.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://picsum.photos/300/300/?random=3">
+                <div class="txt">
+                    <h2>03</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur quod minima aut molestiae corporis ipsa illum soluta voluptate corrupti, nisi, nobis rem accusamus nemo deleniti fugiat perspiciatis fuga et consequatur.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
